@@ -11,6 +11,10 @@
 Unicode titlecasing operations for chars and strings.
 This crate supports the additional functionality needed to handle TR and AZ locales.
 
+Note this crate operates on strings as single words or tokens; it does not handle the gramatical rules to title-case longer strings of text.
+To handle prose such as titles, see the [decasify](https://github.com/alerque/decasify) crate.
+It uses this crate for re-casing each word, but additionally looks for gramatical clues in the context of longer strings and applies language specific style guides, including Turkish support.
+
 ## Usage
 
 ### Chars
